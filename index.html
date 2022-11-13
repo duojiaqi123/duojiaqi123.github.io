@@ -152,6 +152,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Github-部署个人网页-自定义域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/11/13/Github-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/">Github 部署个人网页 | 自定义域名</a>
+    </h1>
+  
+
+        
+        <a href="/2022/11/13/Github-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/" class="archive-article-date">
+  	<time datetime="2022-11-13T11:45:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="首先配置dns"><a href="#首先配置dns" class="headerlink" title="首先配置dns"></a>首先配置dns</h1><p>进入腾讯云管理我的域名，进行dns设置<br>在选择解析时普通的A要用@再用ping出GitHub 博客的ip<br>他需要用ipv4 所以可以在最后添加 -4 来强制pingipv4</p>
+<hr>
+<p>第二个要设置cname<br>用<a target="_blank" rel="noopener" href="http://www.xxx指定的别名/">www.XXX指定的别名</a><br>在写需要指定的GitHub博客的别名 用户名.github.io</p>
+<hr>
+<p>#保存个人域名<br>在hexo 的blog\source中新建CNAME记事本，内容输入【个人域名】，保存关闭。<br>再删除后缀</p>
+<hr>
+<p>#进入github设置，绑定域名<br>进入设置<br>对博客的仓库进行设置<br>再点pages<br>修改Custom domain<br>输入自己的域名进行改名</p>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/11/13/Github-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-关闭git的ssl验证" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -172,7 +242,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#操作<br>在blog文件夹下输入：<br>git config –global http.sslVerify “false”<br>就可以了<br>#最后<br>不知道有没有什么一劳永逸的方法。</p>
+        <p>#操作<br>在blog文件夹下输入：<br>git config –global http.sslVerify “false”<br>就可以了</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yjiao1213/p/15102842.html">https://www.cnblogs.com/yjiao1213/p/15102842.html</a></p>
+<p>#最后<br>不知道有没有什么一劳永逸的方法。</p>
+<hr>
+<p>image.png<br>测试一下用了Bash代码</p>
+<p>git config –global http.sslVerifyfalse</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/df4f7f0dc2eb">https://www.jianshu.com/p/df4f7f0dc2eb</a></p>
 
       
 
